@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div id="form-container">
+        <h2>My Form</h2>
+
+        <form action="Thankyou.html" onsubmit="return validateForm()">
+            <div class="">
+                <label for="fname"></label>First Name:
+                <input type="text" placeholder="Enter your Firstname" id="firstname"><br>
+                <p id="firstNameError" class="error"></p><br>
+            </div>
+            <div class="">
+                <label for="lname"></label>Last Name:
+                <input type="text" placeholder="Enter your Lastname" id="lastname"><br>
+                <p id="lastNameError" class="error"></p><br>
+            </div>
+
+            <div class="">
+                <label for="uname"></label>User Name:
+                <input type="text" placeholder="Enter User Name" id="username"><br>
+                <p id="userError" class="error"></p><br>
+            </div>
+
+            <div class="">
+                <label for="email"></label>Email ID:
+                <input type="text" placeholder="Enter your Email ID" id="email" autocomplete="off"><br>
+                <p id="emailError" class="error"></p><br>
+            </div>
+
+            <div class="">
+                <label for="number"></label>Phone Number:
+                <input type="text" placeholder="Enter phone number" id="phone"><br>
+                <p id="phoneError" class="error"></p><br>
+            </div>
+
+            <div class="">
+                <label for="password"></label>Password:
+                <input type="password" placeholder="Enter your Password" id="password"><input type="checkbox"
+                    onclick="Toggle()">
+                <span>Show Password</span><br>
+                <p id="passError" class="error"></p>
+                <br>
+            </div>
+
+            <div class="">
+                <label for="confirmpassword"></label>Confirm Password:
+                <input type="password" placeholder="Re-enter password" id="confirmpassword"><br>
+                <p id="confirmpassError" class="error"></p><br>
+            </div>
+
+            <div class="">
+                <label for="dob"></label>Date Of Birth:
+                <input type="date" id="date"><br>
+                <p id="dateError" class="error"></p><br>
+            </div>
+
+            <div class="">
+                <label for="gender"></label>Gender:<br>
+                <input type="radio" name="gender" id="gender" value="Male">Male<br>
+                <input type="radio" name="gender" id="gender" value="Female">Female<br>
+                <input type="radio" name="gender" id="gender" value="Others">Others<br>
+                <input type="radio" name="gender" id="gender" value="Don't want to share">Don't want to share
+
+                <br>
+                <p id="gendererror" class="error"></p>
+                <br>
+            </div>
+            <div class="">
+                <label for="country">Country:</label>
+
+                <select name="country" id="country">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="India" selected>India</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+            <br>
+            <div class="">
+                <label for="State">State:</label>
+
+                <select name="State" id="country">
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Gujarat" selected>Gujarat</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                </select>
+            </div>
+            <br>
+            <div class="">
+                <label for="City">City:</label>
+
+                <select name="City" id="city">
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Jamnagar">Jamnagar</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Rajkot">Rajkot</option>
+                </select>
+            </div>
+            <br>
+            <div class="">
+                <label for="address"></label>Address:
+                <br>
+                <textarea name="address" id="address" rows="5" cols="50" placeholder="Enter your address">
+                        </textarea>
+            </div>
+            <br>
+            <div class="">
+
+                <label for="qualification"></label>Qualification:<br>
+                <input type="checkbox" name="qualification" id="qualification" value="BE-IT">BE-IT<br>
+                <input type="checkbox" name="qualification" id="qualification" value="MCA">MCA<br>
+                <input type="checkbox" name="qualification" id="qualification" value="Others">Others
+            </div>
+            <br>
+            <div class="">
+                <label for="programmingskills"></label>Programming Skills:<br>
+                <select type="checkbox" id='programmingskills' multiple>
+                    <option value='1'>Item 1</option>
+                    <option value='2'>Item 2</option>
+                    <option value='3'>Item 3</option>
+                    <option value='4'>Item 4</option>
+                    <option value='5'>Item 5</option>
+                </select>
+            </div>
+            <br>
+
+            <input type="submit" class="submit" value="SUBMIT">
+        </form>
+
+
+
+        <script src="form.js"></script>
+    </div>
+</body>
+
+</html>

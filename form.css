@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container{
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.error{
+    color: red;
+}
+
+h2{
+    margin-top: -23px;
+}
+
+.submit{
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+}
+.submit:hover{
+    background-color: rgb(43, 145, 39);
+}
